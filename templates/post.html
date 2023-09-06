@@ -1,0 +1,15 @@
+{% block content %}
+    <div class="post-item">
+        <div class="post-title">
+            <div>
+                <h2> {{ post['title'] }} </h2>
+            </div>
+            <div>
+                <p> {{ post['date'] }} </p>
+            </div>
+        </div>
+        <div class="content">
+            <p> {{ post['content'] }} </p>
+        </div>
+    </div>
+{% endblock content %}

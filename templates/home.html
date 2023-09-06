@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+    {% block content %}
+    <div class="search">
+        <form class="search-btn" action="" role="serach">
+            <input type="search" placeholder="Search...">
+            <button type="submit"> Search </button>
+        </form>
+    </div>
+    <div class="layout">
+        <div class="left-layout"></div>
+        <div class="middle-layout">
+            {% for post in posts %}
+                {% include "post.html" %}
+            {% endfor %}
+        </div>
+        <div class="right-layout"></div>
+    </div>
+{% endblock content %}
